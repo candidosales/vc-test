@@ -5,9 +5,20 @@
   V.init( {
   apikey: "YY34QPP0QBC9S0ZNKZ5L21uA3XDCPtxmbqOGE7Nr0qUih40CI",
    paymentRequest:{
-    currencyCode: "USD",
+    currencyCode: "BRL",
     total: "10.00"
-  }
+  },
+  // externalProfileId: "RealMadrid",
+  // settings: {
+  //   locale: "pt_BR",
+  //   countryCode: "BR",
+  //   logoUrl: "https://s2.logaster.com/static/images_bt5/logo.png",
+  //   displayName: "Show do Milhao",
+  //   returningMessage: "Olá, valeu!",
+  //   welcomeContentMessage: "Você vai pagar o fulano",
+  //   welcomeTitleMessage: "Pagamento Show do Milhao"
+  // },
+
   });
 V.on("payment.success", function(payment)
   {alert(JSON.stringify(payment)); });

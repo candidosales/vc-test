@@ -17,6 +17,7 @@ end
 
 def authorize_credit_card(request_body)
   xpay_token = get_xpay_token($resource_path, $query_string, request_body)
+  puts xpay_token
   full_request_url = "https://sandbox.api.visa.com/" + $base_uri + $resource_path + "?" + $query_string
   begin
     response = RestClient::Request.execute(:url => full_request_url,

@@ -1,0 +1,131 @@
+{
+   "merchantConfig":{
+      "clientId":"f794bab5-6f69-0625-9dba-1d4c7676c301",
+      "defaultProfile":false,
+      "logo":{
+         "url":"https://pespespes.files.wordpress.com/2013/07/fc-barcelona.png",
+         "displayName":"Barcelona Futebol"
+      },
+      "externalProfileId":"Barcelona",
+      "shippingConstraints":{
+         "collectShipping":false,
+         "acceptedRegions":{
+            "region":[
+               {
+                  "countryCode":"BR"
+               }
+            ]
+         }
+      },
+      "billingConstraints":{
+         "acceptedRegions":{
+            "region":[
+               {
+                  "countryCode":"BR"
+               }
+            ]
+         }
+      },
+      "paymentConstraints":{
+         "paymentTypes":{
+            "paymentType":[
+               {
+                  "cardBrand":"MASTERCARD"
+               },
+               {
+                  "cardBrand":"VISA"
+               }
+            ]
+         }
+      },
+      "websiteUrl":"http://google.com.br",
+      "customerSupportUrl":"http://google.com.br/support",
+      "allowEnrollment":true,
+      "widgetStyle":"OVERLAY",
+      "buttonPosition":"RELATIVE"
+   },
+   "cardArt":{
+      "imageUrl":"https://sandbox.secure.checkout.visa.com/VmeCardArts/0iaeXoA-8d9R0A6UWJ4ptWUOO4h1gOebQHr1jFEYu4Q.png",
+      "baseImageFileName":"10021736~bbuniversitario",
+      "paymentInstrumentGuid":"b08b7503-6ab6-e1df-6834-1f5aee1baa01",
+      "nickName":"",
+      "height":105,
+      "width":164,
+      "orientation":"H",
+      "brand":"VISA",
+      "productType":"C",
+      "country":"76"
+   },
+   "modifiedAmount":"10",
+   "paymentInstrument":[
+      {
+         "id":"b08b7503-6ab6-e1df-6834-1f5aee1baa01",
+         "accepted":true,
+         "lastFourDigits":"3325",
+         "billingAddress":{
+            "billingAccepted":true,
+            "personName":"Candido Sales",
+            "firstName":"Candido",
+            "lastName":"Sales",
+            "line1":"990 Rua Martiniano de Carvalho - lado par",
+            "line1raw":"990{SP}Rua Martiniano de Carvalho{SP}- lado par",
+            "line2":"Bela Vista",
+            "city":"São Paulo",
+            "stateProvinceCode":"SP",
+            "postalCode":"01321000",
+            "countryCode":"BR",
+            "phone":"11942005216",
+            "phoneNumberCountryCode":"55",
+            "default":false
+         },
+         "billingAddressId":"e3378c1d-288b-5bc4-0e5a-156194870001",
+         "verificationStatus":"VERIFIED",
+         "expired":false,
+         "cardArts":{
+            "cardArt":[
+               {
+                  "baseImageFileName":"https://sandbox.secure.checkout.visa.com/VmeCardArts/0iaeXoA-8d9R0A6UWJ4ptWUOO4h1gOebQHr1jFEYu4Q.png",
+                  "height":105,
+                  "width":164
+               }
+            ]
+         },
+         "issuerBid":"10021736",
+         "nickName":"",
+         "nameOnCard":"Candido Sales",
+         "cardFirstName":"Candido",
+         "cardLastName":"Sales",
+         "expirationDate":{
+            "month":"12",
+            "year":"2021"
+         },
+         "default":true,
+         "comboCardSet":false,
+         "paymentType":{
+            "cardBrand":"VISA",
+            "cardType":"CREDIT"
+         }
+      }
+   ],
+   "shippingAddress":[
+      {
+         "id":"e3378c1d-288b-5bc4-0e5a-156194870001",
+         "billingAccepted":true,
+         "accepted":true,
+         "verificationStatus":"NOT_VERIFIED",
+         "personName":"Candido Sales",
+         "firstName":"Candido",
+         "lastName":"Sales",
+         "line1":"990 Rua Martiniano de Carvalho - lado par",
+         "line1raw":"990{SP}Rua Martiniano de Carvalho{SP}- lado par",
+         "line2":"Bela Vista",
+         "city":"São Paulo",
+         "stateProvinceCode":"SP",
+         "postalCode":"01321000",
+         "countryCode":"BR",
+         "phone":"11942005216",
+         "phoneNumberCountryCode":"55",
+         "default":false
+      }
+   ]
+}
