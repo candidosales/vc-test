@@ -1,7 +1,0 @@
-{
-  "name": "Server Test",
-  "description": "Server Test Express 4",
-  "repository": "https://github.com/candidosales/vc-test/tree/master/VisaAPICalls/Web/server",
-  "logo": "https://worldvectorlogo.com/logos/nodejs-icon.svg",
-  "keywords": ["node", "express", "static"]
-}
