@@ -1,7 +1,7 @@
 {
   "name": "Server Test",
   "description": "Server Test Express 4",
-  "repository": "https://github.com/heroku/node-js-sample",
-  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "repository": "https://github.com/candidosales/vc-test/tree/master/VisaAPICalls/Web/server",
+  "logo": "http://ih1.redbubble.net/image.109336634.1604/flat,550x550,075,f.u1.jpg",
   "keywords": ["node", "express", "static"]
 }
