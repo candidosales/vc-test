@@ -9,6 +9,15 @@ app.get('/', function (req, res) {
   res.send('Hello World!');
 });
 
+app.get('/register', function (req, res) {
+  res.json({
+      "id" : "1232",
+      "username" : "Fulano",
+      "email" : "fulano@gmail.com",
+      "logged" : true
+  });
+});
+
 app.get('/authentication', function (req, res) {
   res.json({
       "id" : "1232",
@@ -18,7 +27,7 @@ app.get('/authentication', function (req, res) {
   });
 });
 
-app.get('/transactions', function (req, res) {
+app.get('/transaction', function (req, res) {
   res.json({
       "id" : "23412412",
       "merchantName" : "Teste",
