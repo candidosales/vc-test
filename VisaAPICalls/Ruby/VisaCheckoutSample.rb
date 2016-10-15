@@ -5,6 +5,7 @@ $shared_secret = "g1bRah8#vttJsjBojh$#VJOMCWkSzlHUs5-pgCKP"
 $base_url = "https://sandbox.api.visa.com/wallet-services-web/"
 $get_url = "payment/data/"
 
+
 def get_payment_data(call_id)
   resource_path = $get_url + call_id
   query_string = "apiKey=" + $api_key + "&dataLevel=FULL"
@@ -13,6 +14,7 @@ def get_payment_data(call_id)
   require 'restclient'
   full_request_url = $base_url + resource_path + "?" + query_string
   puts "Making Get Payment Data at " + full_request_url
+  puts "X-Pay-Token " + xpay_token
   begin
     response = RestClient::Request.execute(:url => full_request_url,
       :method => :get,
@@ -33,4 +35,4 @@ def get_xpay_token(resource_path, query_string, request_body)
   return "xv2:" + timestamp + ":" + hash_output
 end
 
-puts get_payment_data("3346233718708050201")
+puts get_payment_data("1850070276228666701")
