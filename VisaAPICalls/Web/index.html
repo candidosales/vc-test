@@ -3,29 +3,39 @@
  <script type="text/javascript">
   function onVisaCheckoutReady(){
   V.init( {
-  apikey: "YY34QPP0QBC9S0ZNKZ5L21uA3XDCPtxmbqOGE7Nr0qUih40CI",
+  apikey: "C09MZZH3L3SSCCCIO1OC13w2pYKU-naO2V3q-rEf4KerLkdjA",
    paymentRequest:{
     currencyCode: "BRL",
-    total: "10.00"
+    total: "120.00"
   },
-  // externalProfileId: "RealMadrid",
-  // settings: {
-  //   locale: "pt_BR",
-  //   countryCode: "BR",
-  //   logoUrl: "https://s2.logaster.com/static/images_bt5/logo.png",
-  //   displayName: "Show do Milhao",
-  //   returningMessage: "Olá, valeu!",
-  //   welcomeContentMessage: "Você vai pagar o fulano",
-  //   welcomeTitleMessage: "Pagamento Show do Milhao"
-  // },
+  //externalProfileId: "RealMadrid",
+  settings: {
+    locale: "pt_BR",
+    countryCode: "BR",
+    logoUrl: "https://s2.logaster.com/static/images_bt5/logo.png",
+    displayName: "Show do Milhao",
+    returningMessage: "Olá, valeu!",
+    welcomeContentMessage: "Você vai pagar o fulano",
+    welcomeTitleMessage: "Pagamento Show do Milhao",
+    dataLevel: "FULL"
+  },
 
   });
 V.on("payment.success", function(payment)
-  {alert(JSON.stringify(payment)); });
+  {
+    console.log(payment);
+    alert(JSON.stringify(payment)); 
+  });
 V.on("payment.cancel", function(payment)
-  {alert(JSON.stringify(payment)); });
+  {
+    console.log(payment);
+    alert(JSON.stringify(payment)); 
+  });
 V.on("payment.error", function(payment, error)
-  {alert(JSON.stringify(error)); });
+  {
+    console.log(payment);
+    alert(JSON.stringify(error)); 
+  });
 }
 </script>
 </head>

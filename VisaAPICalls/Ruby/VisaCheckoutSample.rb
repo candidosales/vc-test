@@ -1,7 +1,7 @@
 require 'restclient'
 
-$api_key = "9S53B8RMQIL6UDC1ECQS218FQH76Wpbztq8J9XHG49GLR2bYc"
-$shared_secret = "g1bRah8#vttJsjBojh$#VJOMCWkSzlHUs5-pgCKP"
+$api_key = "C09MZZH3L3SSCCCIO1OC13w2pYKU-naO2V3q-rEf4KerLkdjA"
+$shared_secret = "CneQCEN+LnqLkZMd7YbqQ9ok/uNdq$JIxJo#Jvzx"
 $base_url = "https://sandbox.api.visa.com/wallet-services-web/"
 $get_url = "payment/data/"
 
@@ -36,3 +36,5 @@ def get_xpay_token(resource_path, query_string, request_body)
 end
 
 puts get_payment_data("1850070276228666701")
+
+puts get_payment_data("1295841049461054601")
